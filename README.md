@@ -6,5 +6,4 @@
 ```
 
 ### Todo
-- Redis Docker
 - on AWS Terraform
