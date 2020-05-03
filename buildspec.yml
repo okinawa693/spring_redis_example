@@ -6,7 +6,7 @@ phases:
       docker: 18
   pre_build:
     commands:
-      # - echo Nothing to do in the pre_build phase ...
+      - echo Nothing to do in the pre_build phase ...
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
       - REPO=$(aws ecr describe-repositories --repository-names example --output text --query "repositories[0].repositoryUrii")
       - IMAGE=$REPO:latest
