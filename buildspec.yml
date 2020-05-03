@@ -21,5 +21,5 @@ phases:
       # - echo Build completed on `date`
       - printf '[{"name":"example","imageUri":"%s"}]' $IMAGE > imagedefinitions.json
 artifacts:
-  files: imagedifinitions.json
+  files: imagedefinitions.json
     # - target/messageUtil-1.0.jar
