@@ -14,6 +14,7 @@ phases:
     commands:
       - echo Build started on `date`
       # - mvn install
+      - ./gradlew clean build
       - docker build -t $IMAGE .
       - docker push $IMAGE
   post_build:
