@@ -20,8 +20,8 @@ class HelloController {
 
     @RequestMapping("/")
     fun index(): String {
-        // val timeout = Duration.ofHours(1)
-        // redisTemplate.opsForValue().set("hello", "XXXXXXX", timeout)
+        val timeout = Duration.ofHours(1)
+        redisTemplate.opsForValue().set("hello", "XXXXXXX", timeout)
         return "Hello World!"
     }
 }
